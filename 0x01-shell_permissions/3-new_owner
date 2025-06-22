@@ -1,1 +1,4 @@
 touch hello
+chmod +x 3-new_owner
+sudo ./3-new_owner
+ls -l hello
