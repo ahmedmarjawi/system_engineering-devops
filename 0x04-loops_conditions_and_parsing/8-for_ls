@@ -2,7 +2,8 @@
 # List non-hidden regular files with '-' and show name after first dash
 
 for f in *-*; do
-  if [ -f "$f" ]; then
+  if [ -f "$f" ]; 
+then
     echo "${f#*-}"
   fi
 done
