@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
-# A Bash script that displays all running processes in a user-oriented hierarchical format
-ps -eo user,started,command --forest
+# A Bash script that lists all running processes with full timestamp and hierarchy
+
+echo "USER STARTED COMMAND"
+ps -eo user,lstart,command --forest | awk 'NR>1 {printf "%-8s %s %s\n", $1, $2" "$3" "$4" "$5, $6, substr($0, index($0,$8))}'
