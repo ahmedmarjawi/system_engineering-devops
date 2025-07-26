@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# A Bash script that lists all running processes with full timestamp and hierarchy
+# A Bash script that lists only the USER column of all running processes
 
-echo "USER STARTED COMMAND"
-ps -eo user,lstart,command --forest | awk 'NR>1 {printf "%-8s %s %s\n", $1, $2" "$3" "$4" "$5, $6, substr($0, index($0,$8))}'
+ps -eo user= | sort -u
