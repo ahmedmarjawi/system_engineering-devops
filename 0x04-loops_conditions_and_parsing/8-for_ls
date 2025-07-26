@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-# List non-hidden regular files with '-' and show name after first dash
+# This script lists files in the current directory and displays only the part after the first dash
 
-for f in *-*; do
-  if [ -f "$f" ]; 
-then
-    echo "${f#*-}"
-  fi
+for file in *-*; do
+  # Skip hidden files and ensure it's not a directory
+  [ -e "$file" ] || continue
+  name="${file#*-}"
+  echo "$name"
 done
