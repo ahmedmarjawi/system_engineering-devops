@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # A Bash script that displays an infinite message and prints OK on SIGTERM
 
-trap 'echo I am invincible!!!' SIGTERM
+trap 'echo OK' SIGTERM
 
 while true
 do
-    echo "To infinity and beyond"
+    echo "I am invincible!!!"
     sleep 2
 done
