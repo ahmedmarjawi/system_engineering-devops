@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # A Bash script that displays an infinite message and prints OK on SIGTERM
 
-trap 'echo OK' SIGTERM
+trap 'echo I am invincible!!!' SIGTERM
 
 while true
 do
